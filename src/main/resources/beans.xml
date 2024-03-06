@@ -9,8 +9,8 @@
   <bean id="danishGreeter" class="camelinaction.DanishGreeter"/>
   <bean id="englishGreeter" class="camelinaction.EnglishGreeter"/>
 
-  <bean id="greetMeBean" class="camelinaction.GreetMeBean">
+  <bean id="greaterService" class="camelinaction.GreaterService">
     <property name="greeter" ref="englishGreeter"/>
   </bean>
-  
+
 </beans>

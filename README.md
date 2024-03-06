@@ -13,7 +13,7 @@ Chapter 2 - Spring Routing Example
   </bean>
 ````
 
-GreetMeBean САМОСТОЯТЕЛЬНО подгружает Spring контекст(ApplicationContext) bean.xml и использует bean из него:  
+GreetMeBean САМОСТОЯТЕЛЬНО подгружает Spring контекст(ApplicationContext) ИЗ __bean.xml__ и использует __bean__ из него:  
 
 ````shell
 public class GreetMeBean {
