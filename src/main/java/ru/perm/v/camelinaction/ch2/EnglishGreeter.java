@@ -1,4 +1,4 @@
-package camelinaction;
+package ru.perm.v.camelinaction.ch2;
 
 public class EnglishGreeter implements Greeter {
 

@@ -4,13 +4,14 @@ Chapter 2 - Spring Routing Example
 В контексте Spring (beans.xml) определено 3 бина: RussianGreeter, DanishGreeter, EnglishGreeter. В бин GreetMain внедрена зависимость russianGreeter:
 
 ````xml
-  <bean id="russianGreeter" class="camelinaction.RussianGreeter"/>
-  <bean id="danishGreeter" class="camelinaction.DanishGreeter"/>
-  <bean id="englishGreeter" class="camelinaction.EnglishGreeter"/>
 
-  <bean id="greetMain" class="camelinaction.GreetMain">
-    <property name="greeter" ref="russianGreeter"/>
-  </bean>
+<bean id="russianGreeter" class="ru.perm.v.camelinaction.ch2.RussianGreeter"/>
+<bean id="danishGreeter" class="ru.perm.v.camelinaction.ch2.DanishGreeter"/>
+<bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.EnglishGreeter"/>
+
+<bean id="greetMain" class="ru.perm.v.camelinaction.ch2.GreetMain">
+<property name="greeter" ref="russianGreeter"/>
+</bean>
 ````
 
 GreetMain САМОСТОЯТЕЛЬНО подгружает Spring контекст(ApplicationContext) ИЗ __bean.xml__ и использует __bean__ из него:  
@@ -39,5 +40,5 @@ public class GreetMain {
 Запуск:
 
 ````shell
-$ mvn compile exec:java -Dexec.mainClass=camelinaction.GreetMain
+$ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMain
 ````

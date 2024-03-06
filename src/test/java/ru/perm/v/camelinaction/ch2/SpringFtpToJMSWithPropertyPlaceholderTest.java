@@ -1,15 +1,15 @@
-package camelinaction;
+package ru.perm.v.camelinaction.ch2;
 
 import org.apache.camel.test.spring.CamelSpringTestSupport;
 import org.junit.Test;
 import org.springframework.context.support.AbstractXmlApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SpringFtpToJMSWithSpringPropertyPlaceholderTest extends CamelSpringTestSupport {
+public class SpringFtpToJMSWithPropertyPlaceholderTest extends CamelSpringTestSupport {
 
     @Override
     protected AbstractXmlApplicationContext createApplicationContext() {
-        return new ClassPathXmlApplicationContext("camelinaction/SpringFtpToJMSWithSpringPropertyPlaceholderTest.xml");
+        return new ClassPathXmlApplicationContext("ru/perm/v/camelinaction/ch2/SpringFtpToJMSWithPropertyPlaceholderTest.xml");
     }
 
     @Test

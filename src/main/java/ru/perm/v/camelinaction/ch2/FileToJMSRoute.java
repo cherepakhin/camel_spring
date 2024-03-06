@@ -1,4 +1,4 @@
-package camelinaction;
+package ru.perm.v.camelinaction.ch2;
 
 import org.apache.camel.builder.RouteBuilder;
 

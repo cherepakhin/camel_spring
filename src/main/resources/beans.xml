@@ -5,11 +5,11 @@
        http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="russianGreeter" class="camelinaction.RussianGreeter"/>
-  <bean id="danishGreeter" class="camelinaction.DanishGreeter"/>
-  <bean id="englishGreeter" class="camelinaction.EnglishGreeter"/>
+  <bean id="russianGreeter" class="ru.perm.v.camelinaction.ch2.RussianGreeter"/>
+  <bean id="danishGreeter" class="ru.perm.v.camelinaction.ch2.DanishGreeter"/>
+  <bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.EnglishGreeter"/>
 
-  <bean id="greaterService" class="camelinaction.GreaterService">
+  <bean id="greaterService" class="ru.perm.v.camelinaction.ch2.GreaterService">
     <property name="greeter" ref="englishGreeter"/>
   </bean>
 
