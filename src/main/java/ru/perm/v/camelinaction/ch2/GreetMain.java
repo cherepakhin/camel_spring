@@ -15,8 +15,8 @@ public class GreetMain {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("beans.xml");
 
-        GreaterService greaterService =
-                (GreaterService) context.getBean("greaterService");
-        System.out.println(greaterService.getHello());
+        GreeterService greeterService =
+                (GreeterService) context.getBean("greeterService");
+        System.out.println(greeterService.getHello());
     }
 }

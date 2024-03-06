@@ -52,7 +52,7 @@ $ mvn package
 
 Запуск:
 ````shell
-/usr/lib/jvm/openjdk-17/bin/java -cp camel-spring-0.0.1-jar-with-dependencies.jar ru.perm.v.camelinaction.ch2.GreetMain
+/usr/lib/jvm/openjdk-17/bin/java -cp target/camel-spring-0.0.1-jar-with-dependencies.jar ru.perm.v.camelinaction.ch2.GreetMain
 ````
 
 Примечания:

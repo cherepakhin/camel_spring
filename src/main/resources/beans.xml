@@ -6,7 +6,7 @@
   <bean id="danishGreeter" class="ru.perm.v.camelinaction.ch2.DanishGreeter"/>
   <bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.EnglishGreeter"/>
 
-  <bean id="greaterService" class="ru.perm.v.camelinaction.ch2.GreaterService">
+  <bean id="greeterService" class="ru.perm.v.camelinaction.ch2.GreeterService">
     <property name="greeter" ref="russianGreeter"/>
   </bean>
 
