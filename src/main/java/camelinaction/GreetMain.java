@@ -3,7 +3,7 @@ package camelinaction;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class GreetMeBean {
+public class GreetMain {
 
     private Greeter greeter;
 
