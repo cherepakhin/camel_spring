@@ -43,8 +43,13 @@ public class GreetMain {
 $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMain
 ````
 
-Сборка исполняемого jar:
+### Сборка исполняемого jar:
 
 ````shell
-$ mvn compile exec:java
+$ mvn package
+````
+
+Запуск:
+````shell
+/usr/lib/jvm/openjdk-17/bin/java -cp camel-spring-0.0.1-jar-with-dependencies.jar ru.perm.v.camelinaction.ch2.GreetMain
 ````
