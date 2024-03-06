@@ -69,15 +69,6 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-eclipse-plugin</artifactId>
-          <version>2.9</version>
-          <configuration>
-            <downloadSources>true</downloadSources>
-            <downloadJavadocs>false</downloadJavadocs>
-          </configuration>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.4.3</version>
         </plugin>
@@ -85,13 +76,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
           <version>2.4.1</version>
-          <configuration>
-            <filesets>
-              <fileset>
-                <directory>activemq-data</directory>
-              </fileset>
-            </filesets>
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -166,7 +150,9 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <configuration>
-          <includePluginDependencies>false</includePluginDependencies>
+
+          <includePluginDependencies>true</includePluginDependencies>
+          <mainClass>ru.perm.v.camelinaction.ch2.GreetMain</mainClass>
         </configuration>
       </plugin>
     </plugins>

@@ -42,3 +42,9 @@ public class GreetMain {
 ````shell
 $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMain
 ````
+
+Сборка исполняемого jar:
+
+````shell
+$ mvn compile exec:java
+````
