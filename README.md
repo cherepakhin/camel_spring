@@ -1,4 +1,4 @@
-Chapter 2 - Spring Routing Example
+Camel and Spring Routing Example (Chapter 2)
 ----------------
 
 Пример из книги "Camel in action" Spring+Camel.<br/> 
