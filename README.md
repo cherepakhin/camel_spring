@@ -1,6 +1,7 @@
 Chapter 2 - Spring Routing Example
 ----------------
 
+Пример из книги "Camel in action" Spring+Camel.<br/> 
 В контексте Spring (beans.xml) определено 3 бина: RussianGreeter, DanishGreeter, EnglishGreeter. В бин GreetMain внедрена зависимость russianGreeter:
 
 ````xml
