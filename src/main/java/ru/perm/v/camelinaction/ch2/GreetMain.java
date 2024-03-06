@@ -12,9 +12,11 @@ public class GreetMain {
     }
 
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context =
+                new ClassPathXmlApplicationContext("beans.xml");
 
-        GreaterService greaterService = (GreaterService) context.getBean("greaterService");
+        GreaterService greaterService =
+                (GreaterService) context.getBean("greaterService");
         System.out.println(greaterService.getHello());
     }
 }
