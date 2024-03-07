@@ -5,18 +5,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class GreetMain {
 
-    private Greeter greeter;
-
-    public void setGreeter(Greeter greeter) {
-        this.greeter = greeter;
-    }
-
     public static void main(String[] args) {
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("beans.xml");
 
         GreeterService greeterService =
                 (GreeterService) context.getBean("greeterService");
-        System.out.println(greeterService.getHello());
+        System.out.println(greeterService.getHello()); // Hello, vasi!
     }
 }
