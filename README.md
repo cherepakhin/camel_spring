@@ -10,7 +10,7 @@ Camel and Spring Routing Example (Chapter 2)
 <bean id="danishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.DanishGreeter"/>
 <bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter"/>
 
-<bean id="greetMain" class="ru.perm.v.camelinaction.ch2.GreetMain">
+<bean id="greetMain" class="ru.perm.v.camelinaction.ch2.GreetMainApplication">
 <property name="greeter" ref="russianGreeter"/>
 </bean>
 ````
@@ -34,7 +34,7 @@ public class GreetMain {
 Запуск:
 
 ````shell
-$ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMain
+$ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainApplication
 ````
 
 ### Сборка исполняемого jar:
@@ -45,7 +45,7 @@ $ mvn package
 
 Запуск:
 ````shell
-/usr/lib/jvm/openjdk-17/bin/java -cp target/camel-spring-0.0.1-jar-with-dependencies.jar ru.perm.v.camelinaction.ch2.GreetMain
+/usr/lib/jvm/openjdk-17/bin/java -cp target/camel-spring-0.0.1-jar-with-dependencies.jar ru.perm.v.camelinaction.ch2.GreetMainApplication
 ````
 
 ### Примечания:
