@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/simple_conf")
-public class ReaderFromSimpleJavaConfigRest {
+public class SimpleJavaConfigRest {
     @Autowired
     String beanOneFromSimpleJavaConfig;
 
