@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Config from conf.SimpleJavaConfig
+ */
 @RestController
 @RequestMapping("/simple_conf")
 public class SimpleJavaConfigRest {
