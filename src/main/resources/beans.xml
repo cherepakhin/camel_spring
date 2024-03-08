@@ -18,7 +18,7 @@
   <bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter"/>
 
   <bean id="selectedGreeterService" class="ru.perm.v.camelinaction.ch2.GreeterService">
-    <property name="greeter" ref="englishGreeter"/>
+    <property name="greeter" ref="russianGreeter"/>
   </bean>
 
 </beans>

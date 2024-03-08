@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/greet")
 public class GreeterRest {
+
+    /**
+     * inject from beans.xml property <property name="greeter" ref="russianGreeter"/>
+     */
     @Autowired
-    GreeterService selectedGreeterService; //TODO: inject
-
-//    public GreeterRest(GreeterService selectedGreeterService) {
-//        this.selectedGreeterService = selectedGreeterService;
-//    }
-
+    GreeterService selectedGreeterService;
 
     @GetMapping("/echo/{message}")
     public String echo(@PathVariable String message) {
