@@ -21,15 +21,15 @@ public class SimpleJavaConfigRestTest {
 
     @Test
     void beanOne() {
-        var task = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/simple_conf/bean_one", String.class);
+        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/simple_conf/bean_one", String.class);
 
-        assertEquals("beanOne", task);
+        assertEquals("beanOne", result);
     }
 
     @Test
     void beanTwo() {
-        var task = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/simple_conf/bean_two", String.class);
+        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/simple_conf/bean_two", String.class);
 
-        assertEquals("beanTwo", task);
+        assertEquals("beanTwo", result);
     }
 }
