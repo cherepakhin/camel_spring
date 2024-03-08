@@ -1,10 +1,11 @@
 Различные способы задания конфигурации Spring Beans
 ----------------
 
-1. С помощью xml-файла resources/beans.xml
-2. С помощью @Configuration и @Bean в conf/SimpleJavaConfig
+1. [С помощью xml-файла resources/beans.xml](#xml_file)
+2. [С помощью @Configuration и @Bean в conf/SimpleJavaConfig](#configuration)
 
-__Вариант 1__.
+<a id="xml_file"></a>
+__С помощью xml-файла resources/beans.xml__.
 С помощью xml-файла
 
 Определение resources/beans.xml:
@@ -67,7 +68,8 @@ public class GreeterRest {
 $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainApplication
 ````
 
-__Вариант 2__. 
+<a id="configuration"></a>
+__С помощью @Configuration и @Bean в conf/SimpleJavaConfig__. 
 С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
 
 ````java
