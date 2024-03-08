@@ -7,7 +7,7 @@
 [Примечания](#other)
 
 <a id="xml_file"></a>
-### С помощью xml-файла resources/beans.xml.
+### С помощью xml-файла [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml).
 
 Определение [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml):
 
@@ -89,7 +89,8 @@ public class SimpleJavaConfig {
 }
 ````
 
-Использование в ru.perm.v.camelinaction.ch2.SimpleJavaConfigRest.java как обычно:
+[resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml)
+Использование в [ru.perm.v.camelinaction.ch2.SimpleJavaConfigRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/SimpleJavaConfigRest.java) как обычно:
 
 ````java
 @RestController
