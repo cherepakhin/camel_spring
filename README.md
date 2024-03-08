@@ -4,7 +4,8 @@
 1. С помощью xml-файла resources/beans.xml
 2. С помощью @Configuration и @Bean в conf/SimpleJavaConfig
 
-1. С помощью xml-файла
+__Вариант 1__.
+С помощью xml-файла
 
 Определение resources/beans.xml:
 
@@ -66,7 +67,8 @@ public class GreeterRest {
 $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainApplication
 ````
 
-2. С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
+__Вариант 2__. 
+С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
 
 ````java
 @Configuration
