@@ -9,7 +9,7 @@
 <a id="xml_file"></a>
 ### С помощью xml-файла resources/beans.xml.
 
-Определение resources/beans.xml:
+Определение [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml):
 
 ````xml
 
@@ -72,7 +72,7 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainAp
 <a id="configuration"></a>
 ### С помощью @Configuration и @Bean в [conf/SimpleJavaConfig](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/SimpleJavaConfig.java). 
 
-С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
+С помощью @Configuration и @Bean. Показано в [conf/SimpleJavaConfig](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/SimpleJavaConfig.java):
 
 ````java
 @Configuration
