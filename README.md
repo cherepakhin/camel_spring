@@ -4,8 +4,10 @@
 1. [С помощью xml-файла resources/beans.xml](#xml_file)
 2. [С помощью @Configuration и @Bean в conf/SimpleJavaConfig](#configuration)
 
+[Примечания](#other)
+
 <a id="xml_file"></a>
-###С помощью xml-файла resources/beans.xml.
+### С помощью xml-файла resources/beans.xml.
 
 Определение resources/beans.xml:
 
@@ -68,7 +70,7 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainAp
 ````
 
 <a id="configuration"></a>
-###С помощью @Configuration и @Bean в conf/SimpleJavaConfig. 
+### С помощью @Configuration и @Bean в conf/SimpleJavaConfig. 
 
 С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
 
@@ -113,6 +115,7 @@ $ mvn package
 /usr/lib/jvm/openjdk-17/bin/java -cp target/camel-spring-0.0.1-jar-with-dependencies.jar ru.perm.v.camelinaction.ch2.GreetMainApplication
 ````
 
+<a id="other"></a>
 ### Примечания:
 
 Удален WARNING "172 [main] WARN org.springframework.beans.factory.xml.ResourceEntityResolver - DTD/XSD XML entity [http://www.springframework.org/schema/beans/spring-beans.xsd] not found, falling back to remote https resolution". Исправлен заголовок файла beans.xml.
