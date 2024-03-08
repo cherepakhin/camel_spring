@@ -1,8 +1,12 @@
-Camel and Spring Routing Example (Chapter 2)
+Различные способы задания конфигурации Spring Beans
 ----------------
 
-Пример из книги "Camel in action" Spring+Camel.<br/> 
-В контексте Spring (beans.xml) определено 3 бина: RussianGreeter, DanishGreeter, EnglishGreeter. В бин GreetMain внедрена зависимость russianGreeter:
+1. С помощью xml-файла resources/beans.xml
+2. С помощью @Configuration и @Bean в conf/SimpleJavaConfig
+
+1. С помощью xml-файла
+
+Определение resources/beans.xml:
 
 ````xml
 
@@ -15,26 +19,68 @@ Camel and Spring Routing Example (Chapter 2)
 </bean>
 ````
 
-GreetMain САМОСТОЯТЕЛЬНО подгружает Spring контекст(ApplicationContext) ИЗ __bean.xml__ и использует __bean__ "greeterService" из него:  
+Импорт в проект:
 
-````shell
-public class GreetMain {
+````java
+@Configuration
+@ImportResource({"classpath*:beans.xml"})
+public class BeansConfiguration {
+}
+````
+
+Можно так подгрузить и получить bean :
+
+````java
+@SpringBootApplication
+public class GreetMainApplication {
 
     public static void main(String[] args) {
+        SpringApplication.run(GreetMainApplication.class, args);
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("beans.xml");
 
         GreeterService greeterService =
-                (GreeterService) context.getBean("greeterService");
-        System.out.println(greeterService.getHello());
+                (GreeterService) context.getBean("selectedGreeterService");
+        System.out.println(greeterService.getHello()); // Hello, vasi!
     }
 }
+````
+
+или как обычно:
+
+````java
+@RestController
+@RequestMapping("/greet")
+public class GreeterRest {
+
+    /**
+     * inject from beans.xml property <property name="greeter" ref="russianGreeter"/>
+     */
+    @Autowired
+    GreeterService selectedGreeterService;
 ````
 
 Запуск:
 
 ````shell
 $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainApplication
+````
+
+2. С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
+
+````java
+@Configuration
+public class SimpleJavaConfig {
+@Bean
+public String beanOneFromSimpleJavaConfig() {
+return "beanOne";
+}
+
+    @Bean
+    public String beanTwoFromSimpleJavaConfig() {
+        return "beanTwo";
+    }
+}
 ````
 
 ### Сборка исполняемого jar:
