@@ -28,7 +28,7 @@ public class BeansConfiguration {
 }
 ````
 
-Можно так подгрузить и получить bean :
+Или можно так подгрузить и получить bean :
 
 ````java
 @SpringBootApplication
@@ -71,16 +71,31 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainAp
 ````java
 @Configuration
 public class SimpleJavaConfig {
-@Bean
-public String beanOneFromSimpleJavaConfig() {
-return "beanOne";
-}
+    @Bean
+    public String beanOneFromSimpleJavaConfig() {
+    return "beanOne";
+    }
 
     @Bean
     public String beanTwoFromSimpleJavaConfig() {
         return "beanTwo";
     }
 }
+````
+
+Использование в ru.perm.v.camelinaction.ch2.SimpleJavaConfigRest.java как обычно:
+
+````java
+@RestController
+@RequestMapping("/simple_conf")
+public class SimpleJavaConfigRest {
+@Autowired
+String beanOneFromSimpleJavaConfig;
+
+    @Autowired
+    String beanTwoFromSimpleJavaConfig;
+
+    ....
 ````
 
 ### Сборка исполняемого jar:
