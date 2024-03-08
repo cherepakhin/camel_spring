@@ -5,7 +5,7 @@
 2. [С помощью @Configuration и @Bean в conf/SimpleJavaConfig](#configuration)
 
 <a id="xml_file"></a>
-__С помощью xml-файла resources/beans.xml__.
+__С помощью xml-файла resources/beans.xml.__
 С помощью xml-файла
 
 Определение resources/beans.xml:
@@ -69,7 +69,7 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainAp
 ````
 
 <a id="configuration"></a>
-__С помощью @Configuration и @Bean в conf/SimpleJavaConfig__. 
+__С помощью @Configuration и @Bean в conf/SimpleJavaConfig.__ 
 С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
 
 ````java
