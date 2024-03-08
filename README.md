@@ -70,7 +70,7 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainAp
 ````
 
 <a id="configuration"></a>
-### С помощью @Configuration и @Bean в conf/SimpleJavaConfig. 
+### С помощью @Configuration и @Bean в [conf/SimpleJavaConfig](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/SimpleJavaConfig.java). 
 
 С помощью @Configuration и @Bean. Показано в conf/SimpleJavaConfig:
 
@@ -118,7 +118,7 @@ $ mvn package
 <a id="other"></a>
 ### Примечания:
 
-Удален WARNING "172 [main] WARN org.springframework.beans.factory.xml.ResourceEntityResolver - DTD/XSD XML entity [http://www.springframework.org/schema/beans/spring-beans.xsd] not found, falling back to remote https resolution". Исправлен заголовок файла beans.xml.
+Удален WARNING "172 [main] WARN org.springframework.beans.factory.xml.ResourceEntityResolver - DTD/XSD XML entity http://www.springframework.org/schema/beans/spring-beans.xsd not found, falling back to remote https resolution". Исправлен заголовок файла beans.xml.
 
 ````shell
 <?xml version="1.0" encoding="UTF-8"?>
