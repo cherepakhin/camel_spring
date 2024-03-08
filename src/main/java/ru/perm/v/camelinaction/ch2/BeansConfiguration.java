@@ -5,5 +5,5 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ImportResource({"classpath*:beans.xml"})
-public class XmlConfiguration {
+public class BeansConfiguration {
 }

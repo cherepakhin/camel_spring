@@ -62,18 +62,18 @@ An exception occured while executing the Java class. Line 15 in XML document fro
 
 Удален заголовок "<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">"
 
-Демо простой конфигурации Spring ru.perm.v.camelinaction.ch2.conf.SimpleJavaConfiguration:
+Демо простой конфигурации Spring ru.perm.v.camelinaction.ch2.conf.SimpleJavaConf:
 
 ````java
 @Configuration
-public class SimpleJavaConfiguration {
+public class SimpleJavaConfig {
     @Bean
-    public String beanOneFromSimpleJavaConfiguration() {
+    public String beanOneFromSimpleJavaConfig() {
         return "beanOne";
     }
 
     @Bean
-    public String beanTwoFromSimpleJavaConfiguration() {
+    public String beanTwoFromSimpleJavaConfig() {
         return "beanTwo";
     }
 }

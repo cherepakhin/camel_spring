@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2.conf;
+package ru.perm.v.camelinaction.ch2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/simple_conf")
-public class RestFromSimpleJavaConfiguration {
+public class ReaderFromSimpleJavaConfigRest {
     @Autowired
-    String beanOneFromSimpleJavaConfiguration;
+    String beanOneFromSimpleJavaConfig;
 
     @Autowired
-    String beanTwoFromSimpleJavaConfiguration;
+    String beanTwoFromSimpleJavaConfig;
 
     /**
      * http :8080/api/simple_conf/bean_one
@@ -20,7 +20,7 @@ public class RestFromSimpleJavaConfiguration {
      */
     @GetMapping("/bean_one")
     public String beanOne() {
-        return beanOneFromSimpleJavaConfiguration;
+        return beanOneFromSimpleJavaConfig;
     }
 
     /**
@@ -29,6 +29,6 @@ public class RestFromSimpleJavaConfiguration {
      */
     @GetMapping("/bean_two")
     public String beanTwo() {
-        return beanTwoFromSimpleJavaConfiguration;
+        return beanTwoFromSimpleJavaConfig;
     }
 }
