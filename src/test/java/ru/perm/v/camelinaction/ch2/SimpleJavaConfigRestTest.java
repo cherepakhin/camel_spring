@@ -10,6 +10,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * SpringBootTest for Simple Java Config defined in SimpleJavaConfig through REST SimpleJavaConfigRest
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SimpleJavaConfigRestTest {
