@@ -4,7 +4,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * Variant define configuration from beans.xml
+ * Configuration from beans.xml
+ * <p>
+ * To project injected beans: russianGreeter, germanyGreeter, englishGreeter, selectedGreeterService.
+ * <p/>
+ * This beans will be available with @Autowired
  */
 @Configuration
 @ImportResource({"classpath*:beans.xml"})

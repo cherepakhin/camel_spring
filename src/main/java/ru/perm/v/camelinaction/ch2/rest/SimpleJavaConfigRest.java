@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Demo for @Configuration and @Bean
  * from ru.perm.v.camelinaction.ch2.conf.SimpleJavaConfig
+ * <p/>
+ * beens <b>beanOneFromSimpleJavaConfig</b> and <b>beanTwoFromSimpleJavaConfig</b> defined
+ * in <b>SimpleJavaConfig</b>
  */
 @RestController
 @RequestMapping("/simple_conf")
