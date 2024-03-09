@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2;
+package ru.perm.v.camelinaction.ch2.rest;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ru.perm.v.camelinaction.ch2.service.GreeterService;
 import ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter;
 import ru.perm.v.camelinaction.ch2.greeters.GermanyGreeter;
 import ru.perm.v.camelinaction.ch2.greeters.RussianGreeter;
