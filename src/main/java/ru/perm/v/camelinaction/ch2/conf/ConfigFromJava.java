@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * used in ru.perm.v.camelinaction.ch2.SimpleJavaConfigRest)
  */
 @Configuration
-public class SimpleJavaConfig {
+public class ConfigFromJava {
     @Bean
     public String beanOneFromSimpleJavaConfig() {
         return "beanOne";

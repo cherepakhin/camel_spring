@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/simple_conf")
-public class SimpleJavaConfigRest {
+public class ConfigFromJavaRest {
     @Autowired
     String beanOneFromSimpleJavaConfig;
 

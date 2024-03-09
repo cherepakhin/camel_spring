@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class SimpleJavaConfigRest_Test {
+class ConfigFromJavaRestTest {
     @LocalServerPort
     private int port;
 
