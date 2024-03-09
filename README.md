@@ -2,7 +2,7 @@
 ----------------
 
 1. [С помощью xml-файла resources/beans.xml](#xml_file)
-2. [С помощью @Configuration и @Bean в conf/SimpleJavaConfig](#configuration)
+2. [С помощью @Configuration и @Bean в conf/ConfigFromJava](#configuration)
 
 [Примечания](#other)
 
@@ -70,37 +70,37 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainAp
 ````
 
 <a id="configuration"></a>
-### С помощью @Configuration и @Bean в [conf/SimpleJavaConfig](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/SimpleJavaConfig.java). 
+### С помощью @Configuration и @Bean в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/ConfigFromJava.java). 
 
-С помощью @Configuration и @Bean. Показано в [conf/SimpleJavaConfig](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/SimpleJavaConfig.java):
+С помощью @Configuration и @Bean. Показано в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/ConfigFromJava.java):
 
 ````java
 @Configuration
-public class SimpleJavaConfig {
+public class ConfigFromJava {
     @Bean
-    public String beanOneFromSimpleJavaConfig() {
+    public String beanOneFromConfigFromJava() {
     return "beanOne";
     }
 
     @Bean
-    public String beanTwoFromSimpleJavaConfig() {
+    public String beanTwoFromConfigFromJava() {
         return "beanTwo";
     }
 }
 ````
 
 [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml)
-Использование в [ru.perm.v.camelinaction.ch2.SimpleJavaConfigRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/SimpleJavaConfigRest.java) как обычно:
+Использование в [ru.perm.v.camelinaction.ch2.ConfigFromJavaRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/ConfigFromJavaRest.java) как обычно:
 
 ````java
 @RestController
 @RequestMapping("/simple_conf")
-public class SimpleJavaConfigRest {
+public class ConfigFromJavaRest {
 @Autowired
-String beanOneFromSimpleJavaConfig;
+String beanOneFromConfigFromJava;
 
     @Autowired
-    String beanTwoFromSimpleJavaConfig;
+    String beanTwoFromConfigFromJava;
 
     ....
 ````
@@ -139,18 +139,18 @@ An exception occured while executing the Java class. Line 15 in XML document fro
 
 Удален заголовок "<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">"
 
-Демо простой конфигурации Spring ru.perm.v.camelinaction.ch2.conf.SimpleJavaConf:
+Демо простой конфигурации Spring ru.perm.v.camelinaction.ch2.conf.ConfigFromJava:
 
 ````java
 @Configuration
-public class SimpleJavaConfig {
+public class ConfigFromJava {
     @Bean
-    public String beanOneFromSimpleJavaConfig() {
+    public String beanOneConfigFromJava() {
         return "beanOne";
     }
 
     @Bean
-    public String beanTwoFromSimpleJavaConfig() {
+    public String beanTwoConfigFromJava() {
         return "beanTwo";
     }
 }

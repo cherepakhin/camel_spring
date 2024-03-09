@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/simple_conf")
 public class ConfigFromJavaRest {
     @Autowired
-    String beanOneFromSimpleJavaConfig;
+    String beanOneConfigFromJava;
 
     @Autowired
-    String beanTwoFromSimpleJavaConfig;
+    String beanTwoConfigFromJava;
 
     /**
      * http :8080/api/simple_conf/bean_one
@@ -27,7 +27,7 @@ public class ConfigFromJavaRest {
      */
     @GetMapping("/bean_one")
     public String beanOne() {
-        return beanOneFromSimpleJavaConfig;
+        return beanOneConfigFromJava;
     }
 
     /**
@@ -36,6 +36,6 @@ public class ConfigFromJavaRest {
      */
     @GetMapping("/bean_two")
     public String beanTwo() {
-        return beanTwoFromSimpleJavaConfig;
+        return beanTwoConfigFromJava;
     }
 }

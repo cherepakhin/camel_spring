@@ -12,12 +12,12 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConfigFromJava {
     @Bean
-    public String beanOneFromSimpleJavaConfig() {
+    public String beanOneConfigFromJava() {
         return "beanOne";
     }
 
     @Bean
-    public String beanTwoFromSimpleJavaConfig() {
+    public String beanTwoConfigFromJava() {
         return "beanTwo";
     }
 }
