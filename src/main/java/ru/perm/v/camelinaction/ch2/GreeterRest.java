@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter;
+import ru.perm.v.camelinaction.ch2.greeters.GermanyGreeter;
+import ru.perm.v.camelinaction.ch2.greeters.RussianGreeter;
 
 @RestController
 @RequestMapping("/greet")
@@ -16,14 +19,35 @@ public class GreeterRest {
      */
     @Autowired
     GreeterService selectedGreeterService;
+    @Autowired
+    GermanyGreeter germanyGreeter;
+    @Autowired
+    EnglishGreeter englishGreeter;
+    @Autowired
+    RussianGreeter russianGreeter;
 
     @GetMapping("/echo/{message}")
     public String echo(@PathVariable String message) {
         return message;
     }
 
-    @GetMapping("/hello")
-    public String getHello() {
+    @GetMapping("/selected")
+    public String getSelectedHello() {
         return selectedGreeterService.getHello();
+    }
+
+    @GetMapping("/english")
+    public String getEnglishHello() {
+        return englishGreeter.sayHello();
+    }
+
+    @GetMapping("/germany")
+    public String getGermanHello() {
+        return germanyGreeter.sayHello();
+    }
+
+    @GetMapping("/russian")
+    public String getRussianHello() {
+        return russianGreeter.sayHello();
     }
 }
