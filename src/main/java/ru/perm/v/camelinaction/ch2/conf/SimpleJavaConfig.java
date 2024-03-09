@@ -4,7 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Variant define configuration class through annotation @Configuration and @Bean.
+ * Variant define configuration class with annotation @Configuration and @Bean.
+ * Used in ru.perm.v.camelinaction.ch2.SimpleJavaConfigRest
  */
 @Configuration
 public class SimpleJavaConfig {
