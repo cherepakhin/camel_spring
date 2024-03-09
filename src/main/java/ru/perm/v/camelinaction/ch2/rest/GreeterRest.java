@@ -1,6 +1,6 @@
 package ru.perm.v.camelinaction.ch2.rest;
 
-
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,10 +11,13 @@ import ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter;
 import ru.perm.v.camelinaction.ch2.greeters.GermanyGreeter;
 import ru.perm.v.camelinaction.ch2.greeters.RussianGreeter;
 
+import static java.lang.String.format;
+
 @RestController
 @RequestMapping("/greet")
 public class GreeterRest {
 
+    private static final Logger logger = Logger.getLogger(GreeterRest.class);
     /**
      * inject from beans.xml property <property name="greeter" ref="russianGreeter"/>
      */
@@ -29,6 +32,7 @@ public class GreeterRest {
 
     @GetMapping("/echo/{message}")
     public String echo(@PathVariable String message) {
+        logger.info(format("echo message: {}", message));
         return message;
     }
 
