@@ -32,7 +32,7 @@ public class GreeterRest {
 
     @GetMapping("/echo/{message}")
     public String echo(@PathVariable String message) {
-        logger.info(format("echo message: {}", message));
+        logger.info(format("echo message: %s", message));
         return message;
     }
 
