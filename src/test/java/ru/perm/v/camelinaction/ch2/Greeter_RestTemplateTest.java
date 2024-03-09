@@ -9,13 +9,11 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-/**
- * SpringBootTest for Simple Java Config defined in SimpleJavaConfig through REST SimpleJavaConfigRest
- */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class SimpleJavaConfigRestTest {
+class Greeter_RestTemplateTest {
     @LocalServerPort
     private int port;
 
@@ -23,16 +21,21 @@ public class SimpleJavaConfigRestTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    void beanOne() {
-        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/simple_conf/bean_one", String.class);
+    void getForRussian() {
+        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/greet/russian", String.class);
 
-        assertEquals("beanOne", result);
+        assertTrue(result.contains("Привет"));
     }
-
     @Test
-    void beanTwo() {
-        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/simple_conf/bean_two", String.class);
+    void getForEnglish() {
+        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/greet/english", String.class);
 
-        assertEquals("beanTwo", result);
+        assertTrue(result.contains("Hello"));
+    }
+    @Test
+    void getForGermany() {
+        var result = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/greet/germany", String.class);
+
+        assertTrue(result.startsWith("Guten Tag,"));
     }
 }

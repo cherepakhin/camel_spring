@@ -105,7 +105,14 @@ String beanOneFromSimpleJavaConfig;
     ....
 ````
 
-### Сборка исполняемого jar:
+### Unit tests
+
+````shell
+$ mvn test
+````
+
+
+### Сборка исполняемого jar
 
 ````shell
 $ mvn package
