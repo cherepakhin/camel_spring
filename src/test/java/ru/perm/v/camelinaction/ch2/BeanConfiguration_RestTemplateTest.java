@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class Bean_RestTemplateTest {
+class BeanConfiguration_RestTemplateTest {
     @LocalServerPort
     private int port;
 
@@ -41,7 +41,7 @@ class Bean_RestTemplateTest {
     }
 
     @Test
-    void forSelectedURL() {
+    void forSelectedLanguageURL() {
         String body = restTemplate.getForObject("http://127.0.0.1:" + port + "/api/greet/selected", String.class);
         assertEquals("Привет, vasi", body);
     }

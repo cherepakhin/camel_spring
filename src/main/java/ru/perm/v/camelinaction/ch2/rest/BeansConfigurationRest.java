@@ -15,9 +15,9 @@ import static java.lang.String.format;
 
 @RestController
 @RequestMapping("/greet")
-public class GreeterRest {
+public class BeansConfigurationRest {
 
-    private static final Logger logger = Logger.getLogger(GreeterRest.class);
+    private static final Logger logger = Logger.getLogger(BeansConfigurationRest.class);
     /**
      * inject from beans.xml property <property name="greeter" ref="russianGreeter"/>
      */
