@@ -132,7 +132,7 @@ java -jar target/camel-spring-0.0.1.jar
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 ````
-Исправление ошибки: 
+- Исправление ошибки: 
 An exception occured while executing the Java class. Line 15 in XML document from class path resource [beans.xml] is invalid: Attribute "xmlns" must be declared for elementtype "beans". Причина - удален заголовок: 
 ````shell
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
