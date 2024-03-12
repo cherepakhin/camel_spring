@@ -9,7 +9,7 @@
 <a id="xml_file"></a>
 ### С помощью xml-файла [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml).
 
-Определение [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml):
+Определение [resources/beans.xml](https://github.com/cherepakhin/camel_spring/blob/main/src/main/resources/beans.xml):
 
 ````xml
 
