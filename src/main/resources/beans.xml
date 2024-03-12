@@ -13,11 +13,11 @@
           http://www.springframework.org/schema/util
           http://www.springframework.org/schema/util/spring-util.xsd">
 
-  <bean id="russianGreeter" class="ru.perm.v.camelinaction.ch2.greeters.RussianGreeter"/>
-  <bean id="germanyGreeter" class="ru.perm.v.camelinaction.ch2.greeters.GermanyGreeter"/>
-  <bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter"/>
+  <bean id="russianGreeter" class="ru.perm.v.springconfig.greeters.RussianGreeter"/>
+  <bean id="germanyGreeter" class="ru.perm.v.springconfig.greeters.GermanyGreeter"/>
+  <bean id="englishGreeter" class="ru.perm.v.springconfig.greeters.EnglishGreeter"/>
 
-  <bean id="selectedGreeterService" class="ru.perm.v.camelinaction.ch2.service.GreeterService">
+  <bean id="selectedGreeterService" class="ru.perm.v.springconfig.service.GreeterService">
     <property name="greeter" ref="russianGreeter"/>
   </bean>
 

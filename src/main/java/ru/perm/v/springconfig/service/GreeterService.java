@@ -1,6 +1,6 @@
-package ru.perm.v.camelinaction.ch2.service;
+package ru.perm.v.springconfig.service;
 
-import ru.perm.v.camelinaction.ch2.greeters.Greeter;
+import ru.perm.v.springconfig.greeters.Greeter;
 
 public class GreeterService {
     private Greeter greeter;

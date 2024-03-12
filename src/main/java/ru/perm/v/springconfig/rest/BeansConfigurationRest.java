@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2.rest;
+package ru.perm.v.springconfig.rest;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.perm.v.camelinaction.ch2.service.GreeterService;
-import ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter;
-import ru.perm.v.camelinaction.ch2.greeters.GermanyGreeter;
-import ru.perm.v.camelinaction.ch2.greeters.RussianGreeter;
+import ru.perm.v.springconfig.service.GreeterService;
+import ru.perm.v.springconfig.greeters.EnglishGreeter;
+import ru.perm.v.springconfig.greeters.GermanyGreeter;
+import ru.perm.v.springconfig.greeters.RussianGreeter;
 
 import static java.lang.String.format;
 

@@ -13,9 +13,9 @@
 
 ````xml
 
-<bean id="russianGreeter" class="ru.perm.v.camelinaction.ch2.greeters.RussianGreeter"/>
+<bean id="russianGreeter" class="ru.perm.v.springconfig.greeters.RussianGreeter"/>
 <bean id="danishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.DanishGreeter"/>
-<bean id="englishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.EnglishGreeter"/>
+<bean id="englishGreeter" class="ru.perm.v.springconfig.greeters.EnglishGreeter"/>
 
 <bean id="greetMain" class="ru.perm.v.camelinaction.ch2.GreetMainApplication">
 <property name="greeter" ref="russianGreeter"/>
@@ -139,7 +139,7 @@ An exception occured while executing the Java class. Line 15 in XML document fro
 
 Удален заголовок "<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">"
 
-Демо простой конфигурации Spring ru.perm.v.camelinaction.ch2.conf.ConfigFromJava:
+Демо простой конфигурации Spring conf.ru.perm.v.springconfig.ConfigFromJava:
 
 ````java
 @Configuration

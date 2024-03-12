@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2.rest;
+package ru.perm.v.springconfig.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2;
+package ru.perm.v.springconfig;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

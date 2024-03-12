@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2.conf;
+package ru.perm.v.springconfig.conf;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;

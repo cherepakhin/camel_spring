@@ -1,4 +1,4 @@
-package ru.perm.v.camelinaction.ch2.greeters;
+package ru.perm.v.springconfig.greeters;
 
 public class RussianGreeter implements Greeter {
     public String sayHello() {
