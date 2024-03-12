@@ -14,10 +14,10 @@
 ````xml
 
 <bean id="russianGreeter" class="ru.perm.v.springconfig.greeters.RussianGreeter"/>
-<bean id="danishGreeter" class="ru.perm.v.camelinaction.ch2.greeters.DanishGreeter"/>
+<bean id="danishGreeter" class="ru.perm.v.camelinaction.greeters.greeters.DanishGreeter"/>
 <bean id="englishGreeter" class="ru.perm.v.springconfig.greeters.EnglishGreeter"/>
 
-<bean id="greetMain" class="ru.perm.v.camelinaction.ch2.GreetMainApplication">
+<bean id="greetMain" class="ru.perm.v.springconfig.greeters.GreetMainApplication">
 <property name="greeter" ref="russianGreeter"/>
 </bean>
 ````
@@ -66,13 +66,13 @@ public class GreeterRest {
 Запуск:
 
 ````shell
-$ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.ch2.GreetMainApplication
+$ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.springconfig.GreetMainApplication
 ````
 
 <a id="configuration"></a>
-### С помощью @Configuration и @Bean в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/ConfigFromJava.java). 
+### С помощью @Configuration и @Bean в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/springconfig/conf/ConfigFromJava.java). 
 
-С помощью @Configuration и @Bean. Показано в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/conf/ConfigFromJava.java):
+С помощью @Configuration и @Bean. Показано в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/springconfig/conf/ConfigFromJava.java):
 
 ````java
 @Configuration
@@ -90,7 +90,7 @@ public class ConfigFromJava {
 ````
 
 [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml)
-Использование в [ru.perm.v.camelinaction.ch2.ConfigFromJavaRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/ch2/ConfigFromJavaRest.java) как обычно:
+Использование в [ru.perm.v.camelinaction.springconfig.ConfigFromJavaRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/springconfig/ConfigFromJavaRest.java) как обычно:
 
 ````java
 @RestController
