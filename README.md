@@ -7,7 +7,7 @@
 [Примечания](#other)
 
 <a id="xml_file"></a>
-### С помощью xml-файла [resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml).
+### С помощью xml-файла [resources/beans.xml](https://github.com/cherepakhin/camel_spring/blob/main/src/main/resources/beans.xml).
 
 Определение [resources/beans.xml](https://github.com/cherepakhin/camel_spring/blob/main/src/main/resources/beans.xml):
 
@@ -70,9 +70,9 @@ $ mvn compile exec:java -Dexec.mainClass=ru.perm.v.camelinaction.springconfig.Gr
 ````
 
 <a id="configuration"></a>
-### С помощью @Configuration и @Bean в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/springconfig/conf/ConfigFromJava.java). 
+### С помощью @Configuration и @Bean в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/springconfig/conf/ConfigFromJava.java). 
 
-С помощью @Configuration и @Bean. Показано в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/springconfig/conf/ConfigFromJava.java):
+С помощью @Configuration и @Bean. Показано в [conf/ConfigFromJava](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/springconfig/conf/ConfigFromJava.java):
 
 ````java
 @Configuration
@@ -89,8 +89,8 @@ public class ConfigFromJava {
 }
 ````
 
-[resources/beans.xml](https://github.com/cherepakhin/camel_spring/resources/beans.xml)
-Использование в [ru.perm.v.camelinaction.springconfig.ConfigFromJavaRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/camelinaction/springconfig/ConfigFromJavaRest.java) как обычно:
+[resources/beans.xml](https://github.com/cherepakhin/camel_spring/blob/main/src/main/resources/beans.xml)
+Использование в [ru.perm.v.springconfig.rest.ConfigFromJavaRest.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/springconfig/rest/ConfigFromJavaRest.java) как обычно:
 
 ````java
 @RestController
