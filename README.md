@@ -139,7 +139,7 @@ An exception occured while executing the Java class. Line 15 in XML document fro
 
 Удален заголовок "<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">"
 
-Демо простой конфигурации Spring conf.ru.perm.v.springconfig.ConfigFromJava:
+Демо простой конфигурации Spring [ru.perm.v.springconfig.conf.ConfigFromJava.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/springconfig/conf/ConfigFromJava.java):
 
 ````java
 @Configuration
