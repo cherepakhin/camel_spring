@@ -127,22 +127,18 @@ java -jar target/camel-spring-0.0.1.jar
 <a id="other"></a>
 ### Примечания:
 
-Удален WARNING "172 [main] WARN org.springframework.beans.factory.xml.ResourceEntityResolver - DTD/XSD XML entity http://www.springframework.org/schema/beans/spring-beans.xsd not found, falling back to remote https resolution". Исправлен заголовок файла beans.xml.
-
+- Удален WARNING "172 [main] WARN org.springframework.beans.factory.xml.ResourceEntityResolver - DTD/XSD XML entity http://www.springframework.org/schema/beans/spring-beans.xsd not found, falling back to remote https resolution". Исправлен заголовок файла beans.xml.
 ````shell
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 ````
-
 Исправление ошибки: 
 An exception occured while executing the Java class. Line 15 in XML document from class path resource [beans.xml] is invalid: Attribute "xmlns" must be declared for elementtype "beans". Причина - удален заголовок: 
 ````shell
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 ````
 
-
-
-Демо простой конфигурации Spring [ru.perm.v.springconfig.conf.ConfigFromJava.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/springconfig/conf/ConfigFromJava.java):
+- Демо простой конфигурации Spring [ru.perm.v.springconfig.conf.ConfigFromJava.java](https://github.com/cherepakhin/camel_spring/blob/main/src/main/java/ru/perm/v/springconfig/conf/ConfigFromJava.java):
 
 ````java
 @Configuration
